@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* border: 1px red solid; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    margin: auto 120px auto 120px;
+    /* top | right | bottom | left */
+}
+
+.container h2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: pink;
+}
+
+.navbar{
+    display: flex;
+    align-items: center     ;
+    justify-content: space-around;
+    padding: 0 25px 0 25px;
+    height: 80px;
+    background-color: pink;
+    margin-bottom: 20px;
+}
+
+.home, .contact, .about{
+    margin-left: 10px;
+    
+}
+
+.flex-end{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.flex-start{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-start;
+}
+.flex-column1{
+    flex-direction: column;
+}
+.flex-column2{
+    flex-direction: column;
+}
+.about-me{
+    /* flex-direction: column; */
+    color: white;
+    height: 500px;
+    border-radius: 20px;
+    border-bottom: magenta 5px solid;
+    border-top: blue 5px solid;
+    
+    /* top | right | bottom | left */
+    
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+}
+
+.name{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.home :hover{
+    border: 3px solid magenta;
+}
+.contact :hover{
+    border: 3px solid magenta;
+}
+
+.about :hover{
+    border: 3px solid magenta;
+}
+
+/* batas */
+
+/* ANIMASI */
+.meme{
+    background-image: url("_MPU2787.JPG");
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+/* TABEL KONTAK  */
+table tr td, th{
+    padding-left:10px;
+    padding-right:50px;
+    text-align: center;
+    
+}
+.meme{
+    animation: hilang;
+    animation-name: hilang;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes hilang {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
